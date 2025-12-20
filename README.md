@@ -4,9 +4,8 @@ Este documento fornece instruções para a revisão e empacotamento da extensão
 
 ## Demonstração e Instalação
 
-O vídeo abaixo demonstra a aplicação em funcionamento e explica como adicioná-la ao Chrome:
-
-<video src="demo.mp4" controls width="100%"></video>
+🎥 Demonstração da aplicação em funcionamento  
+👉 Clique aqui para assistir: [Demo da aplicação](demo.mp4)
 
 ## Visão Geral Técnica
 
