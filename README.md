@@ -4,7 +4,7 @@ Este documento fornece instruções para a revisão e empacotamento da extensão
 
 ## Demonstração e Instalação
 
-O vídeo abaixo demonstra a aplicação em funcionamento e explica como adicioná-la ao Chrome:
+O vídeo abaixo demonstra a aplicação em funcionamento e mostra como adicioná-la ao Chrome:
 
 [![Demonstração SidebarNote](https://img.youtube.com/vi/Cush8-91tUM/0.jpg)](https://youtu.be/Cush8-91tUM)
 
