@@ -5,7 +5,7 @@ Este documento fornece instruções para a revisão e empacotamento da extensão
 ## Demonstração e Instalação
 
 🎥 Demonstração da aplicação em funcionamento  
-👉 Clique aqui para assistir: [Demo da aplicação](demo.mp4)
+👉 Clique aqui para assistir: [Demo da aplicação](./demo.mp4)
 
 ## Visão Geral Técnica
 
