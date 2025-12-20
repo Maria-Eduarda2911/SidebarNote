@@ -13,6 +13,7 @@ O vídeo abaixo demonstra a aplicação em funcionamento e explica como adicion�
 Esta extensão também está disponível para o Mozilla Firefox. É só baixar diretamente na loja:
 
 [Link para o SidebarNote no Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/sidebarnote/)
+(No momento da postagem não foi checado se já passou da fase de revisão do pessoal da Mozilla)
 
 ## Visão Geral Técnica
 
