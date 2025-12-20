@@ -2,6 +2,12 @@
 
 Este documento fornece instruções para a revisão e empacotamento da extensão **SidebarNote**.
 
+## Demonstração e Instalação
+
+O vídeo abaixo demonstra a aplicação em funcionamento e explica como adicioná-la ao Chrome:
+
+<video src="demo.mp4" controls width="100%"></video>
+
 ## Visão Geral Técnica
 
 Esta extensão foi desenvolvida utilizando **Vanilla JavaScript (ES6+)**, **HTML5** e **CSS** (injetado via JavaScript).
