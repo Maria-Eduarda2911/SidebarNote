@@ -4,8 +4,20 @@ Este documento fornece instruções para a revisão e empacotamento da extensão
 
 ## Demonstração e Instalação
 
+<<<<<<< HEAD
+O vídeo abaixo demonstra a aplicação em funcionamento e explica como adicioná-la ao Chrome:
+
+[![Demonstração SidebarNote](https://img.youtube.com/vi/Cush8-91tUM/0.jpg)](https://youtu.be/Cush8-91tUM)
+
+## Versão para Firefox
+
+Esta extensão também está disponível para o Mozilla Firefox. É só baixar diretamente na loja:
+
+[Link para o SidebarNote no Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/sidebarnote/)
+=======
 🎥 Demonstração da aplicação em funcionamento  
 👉 Clique aqui para assistir: [Demo da aplicação](./demo.mp4)
+>>>>>>> 563f6c7f69a88e73abf11ed8bb4c896014a755a5
 
 ## Visão Geral Técnica
 
