@@ -19,7 +19,7 @@ Esta extensão também está disponível para o Mozilla Firefox. É só baixar d
 
 Esta extensão foi desenvolvida utilizando **Vanilla JavaScript (ES6+)**, **HTML5** e **CSS** (injetado via JavaScript).
 
-**Nota para os Revisores (AMO):**
+**Nota para os Revisores:**
 - O código-fonte fornecido é o código original.
 - **Não** há uso de frameworks que requerem compilação (como React, Vue, Angular).
 - **Não** há uso de pré-processadores CSS (Sass, Less).
