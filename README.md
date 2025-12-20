@@ -4,6 +4,7 @@ Este documento fornece instruções para a revisão e empacotamento da extensão
 
 ## Demonstração e Instalação
 
+<<<<<<< HEAD
 O vídeo abaixo demonstra a aplicação em funcionamento e explica como adicioná-la ao Chrome:
 
 [![Demonstração SidebarNote](https://img.youtube.com/vi/Cush8-91tUM/0.jpg)](https://youtu.be/Cush8-91tUM)
@@ -13,6 +14,10 @@ O vídeo abaixo demonstra a aplicação em funcionamento e explica como adicion�
 Esta extensão também está disponível para o Mozilla Firefox. É só baixar diretamente na loja:
 
 [Link para o SidebarNote no Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/sidebarnote/)
+=======
+🎥 Demonstração da aplicação em funcionamento  
+👉 Clique aqui para assistir: [Demo da aplicação](./demo.mp4)
+>>>>>>> 563f6c7f69a88e73abf11ed8bb4c896014a755a5
 
 ## Visão Geral Técnica
 
@@ -40,31 +45,4 @@ Esta extensão foi desenvolvida utilizando **Vanilla JavaScript (ES6+)**, **HTML
 - `background.js`: Script de background (Service Worker/Event Page).
 - `icons/`: Diretório contendo os ícones da extensão.
 
-## Instruções de Instalação e Compilação
 
-Como o código não requer transpilação, o processo de "compilação" consiste apenas em empacotar os arquivos em um arquivo `.zip` ou `.xpi`.
-
-### Método 1: Usando NPM e web-ext (Recomendado)
-
-1. Certifique-se de ter o Node.js instalado.
-2. Abra o terminal na raiz do projeto.
-3. Execute o comando de build:
-
-   ```bash
-   npm run build
-   ```
-
-   *Este comando executará `npx web-ext build`, que validará o manifesto e gerará o arquivo `.zip` na pasta `web-ext-artifacts/`.*
-
-### Método 2: Empacotamento Manual
-
-Caso não deseje usar Node.js, você pode criar o pacote manualmente:
-
-1. Selecione os seguintes arquivos e pastas:
-   - `manifest.json`
-   - `sidebar.html`
-   - `app.js`
-   - `background.js`
-   - `icons/`
-2. Crie um arquivo ZIP contendo esses arquivos (certifique-se de que o `manifest.json` esteja na raiz do ZIP, e não dentro de uma subpasta).
-3. O arquivo ZIP resultante é o pacote final pronto para instalação ou submissão.
