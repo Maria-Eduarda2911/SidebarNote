@@ -1,0 +1,22 @@
+{
+  "name": "sidebarnote-chrome",
+  "version": "1.0.0",
+  "description": "Uma extensão Chrome para gerenciar notas no painel lateral do navegador",
+  "scripts": {
+    "dev": "echo 'Acesse chrome://extensions, ative o Modo do desenvolvedor e carregue a pasta descompactada'",
+    "build": "echo 'Esta extensão já está pronta para distribuição'"
+  },
+  "keywords": [
+    "chrome",
+    "extension",
+    "notes",
+    "sidebar",
+    "react"
+  ],
+  "author": "Maria Eduarda S. Silva ",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}
