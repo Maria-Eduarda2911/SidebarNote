@@ -1,25 +1,61 @@
 {
   "manifest_version": 3,
-  "name": "SidebarNote",
+  "name": "SidebarNote — Notas na Barra Lateral",
+  "short_name": "SidebarNote",
   "version": "1.0.0",
-  "description": "Uma extensão Chrome para gerenciar notas no painel lateral do navegador",
-  "permissions": [
-    "storage",
-    "sidePanel"
-  ],
+  "version_name": "1.0.0",
+  "description": "Anotações rápidas e organizadas direto na barra lateral do Chrome e Firefox. Suporte a cores, categorias, busca, exportação e modo escuro.",
+  "author": "Maria Eduarda S. Silva",
+
+  "minimum_chrome_version": "116",
+
+  "homepage_url": "https://github.com/mariaeduarda-silva/SidebarNote",
+
   "icons": {
     "16": "icons/icon-16.svg",
     "32": "icons/icon-32.svg",
     "48": "icons/icon-48.svg",
-    "96": "icons/icon-96.svg"
+    "96": "icons/icon-96.svg",
+    "128": "icons/icon-128.svg"
   },
+
+  "permissions": [
+    "storage",
+    "sidePanel"
+  ],
+
+  "host_permissions": [],
+
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; connect-src 'self'"
+  },
+
+  "action": {
+    "default_title": "Abrir SidebarNote",
+    "default_icon": {
+      "16": "icons/icon-16.svg",
+      "32": "icons/icon-32.svg",
+      "48": "icons/icon-48.svg",
+      "96": "icons/icon-96.svg"
+    }
+  },
+
   "side_panel": {
     "default_path": "sidebar.html"
   },
-  "action": {
-    "default_title": "Abrir SidebarNote"
-  },
+
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "background.js",
+    "type": "module"
+  },
+
+  "commands": {},
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "sidebarnote@mariaeduarda.dev",
+      "strict_min_version": "118.0",
+      "strict_max_version": "*"
+    }
   }
 }
