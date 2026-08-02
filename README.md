@@ -104,7 +104,3 @@ Todas as notas são armazenadas localmente no navegador. A extensão não coleta
 ## 📄 Licença
 
 Este projeto está licenciado sob a licença MIT.
-
----
-
-```
