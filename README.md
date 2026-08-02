@@ -1,44 +1,75 @@
-# SidebarNote - Documentação do Código-Fonte
+# 📝 SidebarNote
 
-Este documento fornece instruções para a revisão e empacotamento da extensão **SidebarNote**.
+[![Mozilla Add-on Version](https://img.shields.io/amo/v/sidebarnote?style=flat-square&logo=firefox-browser&color=orange)](https://addons.mozilla.org/en-US/firefox/addon/sidebarnote/)
+[![Manifest V3](https://img.shields.io/badge/Manifest-V3-blue?style=flat-square&logo=webextensions)](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](LICENSE)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6%2B-yellow?style=flat-square&logo=javascript)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Node.js](https://img.shields.io/badge/Node.js-%3E%3D14.0.0-brightgreen?style=flat-square&logo=node.js)](https://nodejs.org/)
 
-## Demonstração e Instalação
+**SidebarNote** é uma extensão de anotações em barra lateral para navegadores. Ela permite criar, organizar e pesquisar notas rapidamente durante a navegação, sem interromper o seu fluxo de trabalho.
 
-O vídeo abaixo demonstra a aplicação em funcionamento e mostra como adicioná-la ao Chrome:
+---
+
+## 🎥 Demonstração em Vídeo
+
+Assista ao vídeo abaixo para ver o **SidebarNote** em funcionamento e aprender a adicioná-lo ao seu navegador:
 
 [![Demonstração SidebarNote](https://img.youtube.com/vi/Cush8-91tUM/0.jpg)](https://youtu.be/Cush8-91tUM)
 
-## Versão para Firefox
+---
 
-Esta extensão também está disponível para o Mozilla Firefox. É só baixar diretamente na loja:
+## 🦊 Instalação via Firefox Add-ons
 
-[Link para o SidebarNote no Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/sidebarnote/)
-(No momento da postagem não foi checado se já passou da fase de revisão do pessoal da Mozilla)
+A extensão está disponível para o Mozilla Firefox. Você pode instalá-la diretamente através da loja oficial:
 
-## Visão Geral Técnica
+👉 [Instalar SidebarNote no Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/sidebarnote/)
 
-Esta extensão foi desenvolvida utilizando **Vanilla JavaScript (ES6+)**, **HTML5** e **CSS** (injetado via JavaScript).
+---
 
-**Nota para os Revisores:**
-- O código-fonte fornecido é o código original.
-- **Não** há uso de frameworks que requerem compilação (como React, Vue, Angular).
-- **Não** há uso de pré-processadores CSS (Sass, Less).
-- **Não** há ofuscação ou minificação do código.
-- O arquivo `app.js` manipula o DOM diretamente usando `document.createElement` e APIs padrão do navegador.
+## 🛠️ Visão Geral Técnica
 
-## Requisitos de Sistema e Ambiente
+A extensão foi desenvolvida seguindo os padrões das **WebExtensions (Manifest V3)**, priorizando simplicidade, segurança e alta performance:
 
-- **Sistema Operacional:** Windows, macOS ou Linux.
-- **Node.js e NPM:** Necessários apenas para executar o script de empacotamento automatizado (`web-ext`).
-  - Versão recomendada do Node.js: v14.0.0 ou superior.
-  - Versão recomendada do NPM: v6.0.0 ou superior.
+- **Linguagens**: Vanilla JavaScript (ES6+), HTML5 e CSS.
+- **Transpilação**: Não requer o uso de bundlers (Webpack, Vite) ou frameworks (React, Vue, Angular).
+- **Transparência**: O código não é ofuscado nem minificado, facilitando a auditoria e revisão.
+- **Manipulação do DOM**: Manipulação direta com APIs nativas do navegador (`document.createElement`, `querySelector`, etc.).
 
+---
 ## Estrutura de Arquivos
+```bash
 
-- `manifest.json`: Arquivo de manifesto da WebExtension (Manifest V3).
-- `sidebar.html`: Ponto de entrada da interface da barra lateral.
-- `app.js`: Lógica principal da aplicação (Classes, Estado, Manipulação de DOM).
-- `background.js`: Script de background (Service Worker/Event Page).
-- `icons/`: Diretório contendo os ícones da extensão.
+SidebarNote/
+├── icons/                 # Ícones da extensão (16px, 32px, 48px, 96px, 128px)
+├── src/
+│   ├── core/              # Gerenciamento principal do estado e regras de negócio
+│   ├── styles/            # Estilos CSS da interface
+│   ├── ui/                # Renderização da interface e componentes
+│   └── utils/             # Auxiliares de armazenamento e constantes
+├── manifest.json          # Manifesto da extensão (Manifest V3)
+├── sidebar.html           # Interface HTML do painel lateral
+├── app.js                 # Ponto de entrada da aplicação
+├── background.js          # Service Worker de segundo plano
+├── package.json           # Dependências de desenvolvimento (web-ext)
+└── README.md              # Documentação do projeto
+```
 
+## 💻 Requisitos de Sistema e Empacotamento
 
+- **Navegadores suportados**: Mozilla Firefox, Google Chrome, Microsoft Edge, Brave e navegadores baseados em Chromium.
+- **Ferramentas de Desenvolvimento** (Opcional, para empacotamento automatizado via `web-ext`):
+  - **Node.js**: v14.0.0 ou superior
+  - **NPM**: v6.0.0 ou superior
+
+### Empacotando com `web-ext`
+Para testar ou empacotar a extensão para publicação:
+
+```bash
+# Instalar a ferramenta web-ext globalmente
+npm install --global web-ext
+
+# Testar no Firefox em modo desenvolvedor
+web-ext run
+
+# Gerar o arquivo .zip para publicação
+web-ext build
