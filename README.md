@@ -99,8 +99,4 @@ SidebarNote/
 
 Todas as notas são armazenadas localmente no navegador. A extensão não coleta, transmite ou compartilha dados com servidores externos, e usa permissões mínimas para funcionar corretamente.
 
----
 
-## 📄 Licença
-
-Este projeto está licenciado sob a licença MIT.
